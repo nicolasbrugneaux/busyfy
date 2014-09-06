@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Busyfy",
+  "description": "Chrome extension for minds that need focus.",
+  "version": "0.1.0",
+  "author": "Nicolas Brugneaux <nicolas.brugneaux@gmail.com>",
+
+  "background" : {
+    "persistent": false,
+    "scripts": ["build/background-bundle.js"]
+  },
+
+  "content_scripts" : [{
+        "matches": ["*://*/*"],
+        "js" : [
+            "build/content-bundle.js"
+        ],
+        "css" : ["./albox/public/css/style.css"],
+        "run_at": "document_start"
+      }
+    ],
+
+  "permissions": [
+      "tabs"
+  ]
+}

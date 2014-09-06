@@ -1,0 +1,12 @@
+{
+  "name": "busyfy",
+  "version": "0.0.0",
+  "description": "Chrome extension for minds that need focus.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify content.js -o build/content-bundle.js && browserify background.js -o build/background-bundle.js"
+  },
+  "author": "Nicolas Brugneaux",
+  "license": "MIT"
+}
