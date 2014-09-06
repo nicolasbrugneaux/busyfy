@@ -36,8 +36,7 @@ Albox.prototype.dismiss = function() {
 module.exports = Albox;
 
 },{"jquery":3}],2:[function(require,module,exports){
-var Albox = require( './albox/public/js/main.min.js')
-
+var Albox = require( './albox/public/js/main.js')
 
 var albox = new Albox({
     title: 'Focus!',
@@ -50,9 +49,9 @@ var albox = new Albox({
     }
 });
 
-setTimeout( albox.show.bind( albox ), 2000 );
+setTimeout( albox.show.bind( albox ), 20000 );
 
-},{"./albox/public/js/main.min.js":1}],3:[function(require,module,exports){
+},{"./albox/public/js/main.js":1}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.1.1
  * http://jquery.com/
